@@ -1,0 +1,40 @@
+{
+  "name": "crud-clients",
+  "version": "1.0.0",
+  "description": "Crud clients NODEJS + VUEJS",
+  "main": "index.js",
+  "scripts": {
+    "audit": "npm audit fix --registry=https://registry.npmjs.org/",
+    "dev": "env-cmd --rc-file .env -e development node app.js",
+    "lint-fix": "eslint --fix {src,configs,utils}/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hudsonleao/crud-clients.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hudsonleao/crud-clients/issues"
+  },
+  "homepage": "https://github.com/hudsonleao/crud-clients#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.8",
+    "mongoose-paginate-v2": "^1.3.17",
+    "swagger-autogen": "^2.8.2",
+    "swagger-ui-express": "^4.1.6",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  }
+}
