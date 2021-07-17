@@ -2,3 +2,11 @@ apps:
   - name     : 'crud-clients'
     script   : ./app.js
     log_date_format : 'YYYY-MM-DD HH:mm:ss'
+    env    :
+      NODE_ENV: development
+      APPLICATION_PORT: 3000
+      DATABASE_NAME: crud-clients
+      DATABASE_URL: localhost:27017
+      DATABASE_USER: root
+      DATABASE_PASSWORD: root
+      JWT_SECRET: 2erwDewrfvifsfe@dasd*cac_wDSDWsnduiv61ad
