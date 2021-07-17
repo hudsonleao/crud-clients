@@ -3,7 +3,7 @@ module.exports = ({ models: { clientsModel } }) => {
     return {
         find: async ({ query = {}, options = {} }) => {
             if (query.q) {
-                return clientsModel.paginate({"name" : new RegExp(query.q, 'i') })
+                return clientsModel.paginate({"name" : new RegExp(query.q, 'i'), is_deleted: false})
             }
             return clientsModel.paginate({ ...query, is_deleted: false }, options);
         },
